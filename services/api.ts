@@ -1,8 +1,6 @@
 import { DietaryType, SpiceLevel } from './db';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000';
-
-console.log("🔌 Connecting to API:", API_URL); // This helps debug
+const API_URL = 'https://dineai-backend.onrender.com';
 
 export interface MenuItem {
     id: string;

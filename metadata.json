@@ -1,0 +1,5 @@
+{
+  "name": "DineAI",
+  "description": "A high-conversion mobile splash screen for restaurant guest onboarding featuring phone authentication and allergen personalization.",
+  "requestFramePermissions": []
+}

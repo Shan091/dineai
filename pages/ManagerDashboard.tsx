@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { api } from '../services/api';
-import { OrderTicket } from '../App'; // Using the App types for now
+import { OrderTicket } from '../context/RestaurantContext';
 import StaffNavbar from '../components/StaffNavbar';
 import { TrendingUp, DollarSign, Activity, ShoppingBag, ArrowUpRight, ArrowDownRight } from 'lucide-react';
 

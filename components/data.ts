@@ -359,7 +359,7 @@ export const MENU_ITEMS: MenuItem[] = [
         stock: 0,
         rating: 4.8,
         dietaryType: 'non-veg',
-        available: false, // SOLD OUT TEST
+        isAvailable: false, // SOLD OUT TEST
         type: 'portion',
         sizes: [
             { label: 'Half', price: 240 },

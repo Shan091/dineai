@@ -1,6 +1,7 @@
 import { DietaryType, SpiceLevel } from './db';
 
-const API_URL = 'https://dineai-backend.onrender.com';
+// Defaults to a local backend. Set VITE_API_URL (in .env.local, or your hosting dashboard) to point elsewhere.
+const API_URL: string = import.meta.env.VITE_API_URL || 'http://localhost:8000';
 
 export interface MenuItem {
     id: string;

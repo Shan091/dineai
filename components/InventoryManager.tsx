@@ -8,7 +8,7 @@ import {
   Edit2,
   Image as ImageIcon
 } from 'lucide-react';
-import { MenuItem } from './SmartMenu';
+import { MenuItem } from './data';
 import { api } from '../services/api';
 import AddItemModal from './AddItemModal';
 

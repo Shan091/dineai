@@ -1,6 +1,5 @@
-fastapi
-uvicorn
-pydantic[email]
-motor
-python-dotenv
-requests
+fastapi>=0.115
+uvicorn[standard]>=0.30
+pydantic[email]>=2.7
+motor>=3.5
+python-dotenv>=1.0

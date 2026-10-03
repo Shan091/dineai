@@ -11,7 +11,8 @@ import {
   Info
 } from 'lucide-react';
 import { UserPreferences } from '../services/db';
-import { MenuItem, MenuItemSize, EnrichedMenuItem } from './SmartMenu';
+import { MenuItem, MenuItemSize } from './data';
+import { EnrichedMenuItem } from './SmartMenu';
 
 interface FoodDetailModalProps {
   isOpen: boolean;

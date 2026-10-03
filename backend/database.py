@@ -1,8 +1,12 @@
-import motor.motor_asyncio
 import os
 
-# For MVP, we can hardcode or use env vars.
-# Default to localhost for now as per instructions.
+import motor.motor_asyncio
+from dotenv import load_dotenv
+
+# Load backend/.env if present (real environment variables take precedence).
+load_dotenv()
+
+# Connection string comes from MONGO_URL; defaults to a local MongoDB for development.
 MONGO_URL = os.getenv("MONGO_URL", "mongodb://localhost:27017")
 DATABASE_NAME = "dine_ai"
 

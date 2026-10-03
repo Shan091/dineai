@@ -21,7 +21,7 @@ import {
   Activity
 } from 'lucide-react';
 import { CartItem } from './SmartCart';
-import { MENU_ITEMS } from './SmartMenu'; // Import for pricing data
+import { MENU_ITEMS } from './data'; // Import for pricing data
 import { playSound } from '../utils/SoundManager';
 
 export type OrderStatus = 'new' | 'cooking' | 'ready' | 'served';
@@ -181,7 +181,7 @@ const KitchenDashboard: React.FC<KitchenDashboardProps> = ({ onBack, onManageMen
   const handleMarkReady = (ticketId: string) => {
     // Chef marks as ready -> Handoff to waiter
     setTickets(prev => prev.map(t => t.id === ticketId ? { ...t, status: 'ready' } : t));
-    playSound('notification_bell');
+    playSound('ready');
   };
 
   // --- SERVICE ACTIONS (Waiter) ---

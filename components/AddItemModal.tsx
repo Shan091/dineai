@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { X, Check, Image as ImageIcon, DollarSign, Type } from 'lucide-react';
-import { MenuItem } from './SmartMenu';
+import { MenuItem } from './data';
 
 interface AddItemModalProps {
   isOpen: boolean;

@@ -1,6 +1,8 @@
-from pydantic import BaseModel
-from typing import List, Optional, Literal
 from datetime import datetime
+from typing import List, Literal, Optional
+
+from pydantic import BaseModel
+
 
 # --- 1. Menu Models (Mirrors MenuItem in SmartMenu.tsx) ---
 class MenuItem(BaseModel):
@@ -12,13 +14,13 @@ class MenuItem(BaseModel):
     image: str
     isAvailable: bool = True  # Critical for Inventory Toggles
     type: Literal['unit', 'portion'] = 'unit'
-    
+
     # dietary/tags
     dietaryType: Literal['veg', 'non-veg', 'egg']
     spiceLevel: Literal['mild', 'medium', 'fiery']
     tags: List[str] = []
     allergens: List[str] = []
-    
+
     # Metadata
     prepTime: int = 15
     calories: int = 0
@@ -42,7 +44,7 @@ class Order(OrderCreate):
     id: str
     status: Literal['new', 'received', 'cooking', 'ready', 'served', 'paid'] = 'new'
     timestamp: datetime
-    
+
 # --- 3. Session/Table Models ---
 class TableSession(BaseModel):
     tableId: str
